@@ -1,0 +1,47 @@
+/* Colors */
+:root {
+  /*Primary Colors*/
+
+  --violet: #5964e0;
+  --light-violet: #939bf4;
+  --very-dark-blue: #19202d;
+  --midnight: #121721;
+
+  /*Secondary Colors*/
+  --white: #d6d6d6;
+  --light-gray: #f4f6f8;
+  --grey: #979797;
+  --dark-grey: #6e8098;
+}
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 18px;
+}
