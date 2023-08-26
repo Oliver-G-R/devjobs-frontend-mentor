@@ -1,0 +1,21 @@
+.header-container {
+  background-image: url('../../../public/assets/desktop/bg-pattern-header.svg');
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+  padding-top: 25px;
+  background-size: cover;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  position: relative;
+}
+
+.header-content__content-logo {
+  margin-left: auto;
+  background-color: red;
+  padding: 30px;
+}

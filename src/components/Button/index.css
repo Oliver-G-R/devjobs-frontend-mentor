@@ -1,0 +1,15 @@
+.general-button {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: 0.3s all;
+}
+
+.general-button:hover {
+  background-color: var(--light-violet) !important;
+}

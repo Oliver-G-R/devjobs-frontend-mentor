@@ -8,7 +8,7 @@
   --midnight: #121721;
 
   /*Secondary Colors*/
-  --white: #d6d6d6;
+  --white: #ffffff;
   --light-gray: #f4f6f8;
   --grey: #979797;
   --dark-grey: #6e8098;
@@ -24,6 +24,7 @@
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--light-gray);
 }
 
 h1 {
@@ -44,4 +45,16 @@ h3 {
 h4 {
   font-size: 14px;
   line-height: 18px;
+}
+
+/* utility class */
+.global-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1321px) {
+  .global-container {
+    width: 90%;
+  }
 }
