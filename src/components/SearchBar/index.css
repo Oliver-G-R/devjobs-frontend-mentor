@@ -48,7 +48,7 @@
 .searchBar__checkbox-icon:checked {
   background-color: var(--violet);
   border-radius: 3px;
-  background-image: url('../../../public/assets/desktop/icon-check.svg');
+  background-image: url('../../assets/desktop/icon-check.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
