@@ -1,4 +1,5 @@
 import { SearchBar } from '../SearchBar/SearchBar'
+import Logo from '../../assets/desktop/logo.svg'
 import './index.css'
 
 export const HeaderJob = () => {
@@ -6,8 +7,8 @@ export const HeaderJob = () => {
     <header className="header-container">
      <div className='global-container header-content'>
         <div className='header-container__content-logo'>
-          <img src="../../../public/assets/desktop/logo.svg" alt="" />
-          {/* searc toggle */}
+          <img  src={Logo} alt="" />
+          {/* search toggle */}
         </div>
        <div
         style={{

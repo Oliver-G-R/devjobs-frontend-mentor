@@ -1,5 +1,5 @@
-import FilterIcon from '../../../public/assets/desktop/icon-search.svg'
-import locationIcon from '../../../public/assets/desktop/icon-location.svg'
+import FilterIcon from '../../assets/desktop/icon-search.svg'
+import locationIcon from '../../assets/desktop/icon-location.svg'
 import './index.css'
 import { Button } from '../Button/Button'
 

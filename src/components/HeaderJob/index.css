@@ -1,5 +1,5 @@
 .header-container {
-  background-image: url('../../../public/assets/desktop/bg-pattern-header.svg');
+  background-image: url('../../assets/desktop/bg-pattern-header.svg');
   background-repeat: no-repeat;
   padding-bottom: 70px;
   padding-top: 25px;
@@ -12,10 +12,4 @@
 
 .header-content {
   position: relative;
-}
-
-.header-content__content-logo {
-  margin-left: auto;
-  background-color: red;
-  padding: 30px;
 }
