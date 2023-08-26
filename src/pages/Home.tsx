@@ -1,3 +1,4 @@
+import { GridCardCompany } from "../components/GridCardCompany/GridCardCompany"
 import { HeaderJob } from "../components/HeaderJob/HeaderJob"
 
 export const Home = () => {
@@ -5,7 +6,7 @@ export const Home = () => {
     <>
       <HeaderJob/>
       <main>
-        
+        <GridCardCompany/>
       </main>
     </>
   ) 
