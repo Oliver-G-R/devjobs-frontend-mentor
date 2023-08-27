@@ -1,8 +1,11 @@
-import { SearchBar } from '../SearchBar/SearchBar'
 import Logo from '../../assets/desktop/logo.svg'
 import './index.css'
 
-export const HeaderJob = () => {
+interface HeaderJobProps {
+  children?: JSX.Element
+}
+
+export const HeaderJob = ({ children }:HeaderJobProps) => {
   return (
     <header className="header-container">
      <div className='global-container header-content'>
@@ -16,7 +19,9 @@ export const HeaderJob = () => {
           justifyContent: 'center',
           alignItems: 'center'          
         }}
-       > <SearchBar/></div>
+       > 
+        { children }
+       </div>
      </div>
     </header>
   )
