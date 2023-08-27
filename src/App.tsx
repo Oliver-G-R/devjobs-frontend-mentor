@@ -1,11 +1,14 @@
-import { Route } from "wouter";
+import { Route, Switch } from "wouter";
 import { Home } from "./pages/Home";
+import { Detail } from "./pages/Detail";
 
 function App() {
   return (
-    <div>
+    <Switch>
       <Route path="/" component={Home} />
-    </div>
+      <Route path="/detail/:id" component={Detail} />
+      <Route>404, Not Found!</Route>
+    </Switch>
   )
 }
 
