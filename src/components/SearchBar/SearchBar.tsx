@@ -60,6 +60,7 @@ export const SearchBar = () => {
        <Button
         colorText='#fff'
         bgColor='var(--violet)'
+        text='Search'
        />
       </div>
     </form>
