@@ -1,15 +1,18 @@
 import './index.css'
-import companyEmploymentData from '../../data.json'
 import { CardCompany } from '../CardCompany/CardCompany'
+import { useContext } from 'react';
+import { FilterContext } from '../../context/FilterContext';
 
 export const GridCardCompany = () => {
-  
+
+  const {filter: EmploymentDataFiltered} = useContext(FilterContext)
   return (
     <div className='global-container'>
       <div className='gridCardCompany '>
         {
-          companyEmploymentData.map(item => (
+          EmploymentDataFiltered.map(item => (
             <CardCompany
+              key={item.id}
               contract={item.contract}
               nameComapany={item.company}
               location={item.location}

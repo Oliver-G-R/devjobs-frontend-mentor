@@ -7,10 +7,11 @@ interface ButtonProps {
 
 export const Button = ({ bgColor, colorText }:ButtonProps) => {
   return (
-    <button style={{
-      backgroundColor: bgColor,
-      color: colorText
-    }}
+    <button 
+      style={{
+        backgroundColor: bgColor,
+        color: colorText
+      }}
      className='general-button'>
       Search
     </button> 
