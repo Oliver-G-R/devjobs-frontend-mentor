@@ -1,6 +1,7 @@
 import './index.css'
-
+import { Link } from 'wouter'
 interface CardCompanyProps{
+  id: number
   nameComapany: string
   logo: string
   postedAt: string
@@ -12,6 +13,7 @@ interface CardCompanyProps{
 
 export const CardCompany = (props:CardCompanyProps) => {
   const {
+    id,
     nameComapany,
     logo,
     postedAt,
@@ -20,9 +22,11 @@ export const CardCompany = (props:CardCompanyProps) => {
     position,
     logoBackground
   } = props
-
+          
   return (
-    <div className="card-comapany">
+    <Link  
+      href={`/detail/${id}`}
+      className="card-comapany">
       <div 
         className="card-comapany__logo-container"
         style={{
@@ -51,6 +55,6 @@ export const CardCompany = (props:CardCompanyProps) => {
           {location}
         </p>
       </footer>
-    </div>
+    </Link>
   )
 }

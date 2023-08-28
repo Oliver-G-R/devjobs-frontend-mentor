@@ -8,10 +8,12 @@ interface IFilterProvider {
 
 interface IFilterContextDefaultValues {
   filter: CompanyEmployment[] 
+  loading: boolean
   filterElements: ({location, general, fullTime}:IFilterElements) => void
 }
 const FilterContextDefaultValues:IFilterContextDefaultValues = {
   filter:[],
+  loading: false,
   filterElements: () => {}
 }
 
@@ -20,7 +22,7 @@ export const FilterContext = createContext(FilterContextDefaultValues)
 
 export const FilterProvider = ({ children }:IFilterProvider) => {
   const [filter, setFilter] = useState<CompanyEmployment[]>([])
-  const { companyEmploymentData } = useFetchJobs()
+  const { companyEmploymentData, loading } = useFetchJobs()
 
   useEffect(() => {
     if(companyEmploymentData){
@@ -126,6 +128,7 @@ export const FilterProvider = ({ children }:IFilterProvider) => {
   return (
     <FilterContext.Provider value={{
       filter,
+      loading,
       filterElements
     }}>
       {children}

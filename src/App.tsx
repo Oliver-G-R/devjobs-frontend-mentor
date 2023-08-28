@@ -1,6 +1,6 @@
 import { Route, Switch } from "wouter";
 import { Home } from "./pages/Home";
-import { Detail } from "./pages/Detail";
+import { Detail } from "./pages/Detail/Detail";
 
 function App() {
   return (

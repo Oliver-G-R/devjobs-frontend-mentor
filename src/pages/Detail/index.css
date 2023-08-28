@@ -1,0 +1,66 @@
+.detail-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  background-color: var(--white);
+  padding: 20px 30px;
+}
+
+.detail-main-container__header-info-base {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail-main-container__info-base-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-main-container__section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-main-container__description {
+  color: var(--dark-grey);
+}
+
+.detail-main-container__section h1,
+h2,
+h3 {
+  color: var(--very-dark-blue);
+}
+
+.detail-main-container__list {
+  line-height: 40px;
+  margin-left: 20px;
+}
+.detail-main-container__list li {
+  color: var(--dark-grey);
+}
+
+.detail-main-container__list--order {
+  counter-reset: my-counter;
+}
+.detail-main-container__list--order li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 50px; /* Espacio para el número */
+  font-size: 18px; /* Tamaño de fuente para el número */
+}
+.detail-main-container__list--order li::before {
+  content: counter(my-counter); /* Usa el valor actual del contador */
+  counter-increment: my-counter; /* Incrementa el contador */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  color: var(--violet); /* Cambia el color del número */
+  font-size: 24px; /* Tamaño de fuente para el número grande */
+}
