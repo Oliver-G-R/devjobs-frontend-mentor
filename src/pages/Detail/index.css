@@ -68,17 +68,11 @@ h3 {
 .detail-main-container__info-post-container {
   display: flex;
   gap: 10px;
+  align-items: center;
   color: var(--dark-grey);
-  position: relative;
 }
 
 .separator {
-}
-.separator::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 69px;
   height: 5px;
   width: 5px;
   border-radius: 50%;
