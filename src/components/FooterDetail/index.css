@@ -1,6 +1,9 @@
 .footer-detail {
   background-color: var(--white);
   padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-detail__content {
