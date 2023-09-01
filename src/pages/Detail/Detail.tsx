@@ -44,6 +44,7 @@ export const Detail = () => {
                 <span>
                   {companyEmploymentDetail.postedAt}
                 </span>
+                <span className='separator'></span>
                 <span>
                   {companyEmploymentDetail.contract}
                 </span>
