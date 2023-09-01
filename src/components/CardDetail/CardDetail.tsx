@@ -10,13 +10,14 @@ interface CardDetailProps {
 export const CardDetail = ({logo, bgColor, nameCompany, webCompany}:CardDetailProps) => {
   return (
     <div
-      className='card-detail container-detail'
+      className='card-detail'
     >
       <div 
-      className='card-detail__logo-container'
-      style={{
-        backgroundColor: bgColor
-      }}>
+        className='card-detail__logo-container'
+        style={{
+          backgroundColor: bgColor
+        }}
+      >
         <img 
           src={logo} 
           alt={nameCompany} 

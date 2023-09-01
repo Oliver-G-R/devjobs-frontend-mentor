@@ -17,3 +17,12 @@
   font-size: 20px;
   margin-top: 10px;
 }
+
+@media (max-width: 698px) {
+  .footer-detail__info {
+    display: none;
+  }
+  .footer-detail__button-apply {
+    width: 100% !important;
+  }
+}

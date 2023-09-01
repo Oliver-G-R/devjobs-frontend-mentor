@@ -75,3 +75,8 @@ p {
     width: 90%;
   }
 }
+@media (max-width: 1015px) {
+  .container-detail {
+    width: 90%;
+  }
+}

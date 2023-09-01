@@ -5,11 +5,26 @@
   border-radius: 5px;
   position: absolute;
   top: 65px;
+  width: 100%;
   -webkit-box-shadow: -3px 10px 5px -7px rgba(0, 0, 0, 0.21);
   -moz-box-shadow: -3px 10px 5px -7px rgba(0, 0, 0, 0.21);
   box-shadow: -3px 10px 5px -7px rgba(0, 0, 0, 0.21);
 }
 
+.searchBar__button {
+  border: 0;
+  padding: 12px;
+  border-radius: 6px;
+  display: grid;
+  place-content: center;
+  background-color: transparent;
+}
+.searchBar__icon-search {
+  fill: var(--violet);
+}
+.searchBar__icon-filter {
+  fill: #6e8098;
+}
 .searchBar__conten-filter {
   display: flex;
   align-items: center;
@@ -29,10 +44,15 @@
   width: 100%;
   font-size: 18px;
   outline: none;
+  text-overflow: ellipsis;
 }
 
 .searchBar__button {
   margin-left: auto;
+}
+
+.searchBar__button--hide {
+  display: none;
 }
 
 .searchBar__checkbox-icon {
@@ -57,4 +77,30 @@
   background-image: url('../../assets/desktop/icon-check.svg');
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 611px) {
+  .searchBar__conten-filter--hide {
+    display: none;
+  }
+  .searchBar__conten-filter {
+    border: none;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .searchBar__button-search {
+    background-color: var(--violet);
+  }
+  .searchBar__icon-search {
+    fill: white;
+  }
+  .searchBar__button--violet {
+    background-color: var(--violet);
+  }
+  .searchBar__input {
+    text-overflow: ellipsis;
+  }
+  .searchBar__button--hide {
+    display: block;
+  }
 }

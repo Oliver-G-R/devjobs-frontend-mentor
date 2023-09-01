@@ -4,7 +4,6 @@ import { HeaderJob } from "../../components/HeaderJob/HeaderJob"
 import { useFetchJobById } from "../../hook/useFetchJobById";
 import { useRoute } from 'wouter'
 import { FooterDetail } from '../../components/FooterDetail/FooterDetail';
-
 export const Detail = () => {
   const [_, params] = useRoute("/detail/:id")
   
@@ -18,24 +17,15 @@ export const Detail = () => {
 
   return (
     <>
-      <HeaderJob>
-        <div
-          className='container-detail'
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'          
-          }}
-        > 
-          <CardDetail
-            bgColor={companyEmploymentDetail.logoBackground}
-            logo={companyEmploymentDetail.logo}
-            nameCompany={companyEmploymentDetail.company}
-            webCompany={companyEmploymentDetail.website}
-          />
-        </div>
-      </HeaderJob>
-      
+      <HeaderJob/>
+      <div className="container-detail content-card-detail">
+        <CardDetail
+          bgColor={companyEmploymentDetail.logoBackground}
+          logo={companyEmploymentDetail.logo}
+          nameCompany={companyEmploymentDetail.company}
+          webCompany={companyEmploymentDetail.website}
+        />
+      </div>
       <main className="container-detail">
         <div className='detail-main-container '>
           <section className='detail-main-container__section'>
@@ -60,7 +50,7 @@ export const Detail = () => {
                 </div>
                 <a 
                   target='_blank' 
-                  className='general-button general-button--primary-color'
+                  className='general-button general-button--primary-color detail-main-container__button-apply'
                   href={companyEmploymentDetail.apply}> Apply Now
                 </a>
               </div>
@@ -108,6 +98,7 @@ export const Detail = () => {
           </section>
         </div>
       </main>
+
       <FooterDetail 
         position={companyEmploymentDetail.position} 
         company={companyEmploymentDetail.company} 

@@ -16,7 +16,14 @@ export const HeaderJob = ({ children }:HeaderJobProps) => {
           {/* search toggle */}
         </div>
        
-        { children }
+        <div 
+         style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'          
+          }}
+        >{ children }
+        </div>
      </div>
     </header>
   )

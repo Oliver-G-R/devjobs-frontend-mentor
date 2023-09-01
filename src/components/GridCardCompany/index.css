@@ -4,3 +4,9 @@
   grid-gap: 4rem;
   margin-top: 150px;
 }
+
+@media (max-width: 396px) {
+  .gridCardCompany {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}

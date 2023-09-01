@@ -19,7 +19,7 @@ export const FooterDetail = ({position, company, applyUrl}:FooterDetailProps) =>
           </div>
           <a 
               target='_blank' 
-              className='general-button general-button--primary-color'
+              className='general-button general-button--primary-color footer-detail__button-apply'
               href={applyUrl}> Apply Now
           </a>
         </div>
