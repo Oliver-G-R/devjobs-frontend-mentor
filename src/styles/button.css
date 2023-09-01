@@ -1,0 +1,31 @@
+.general-button {
+  display: grid;
+  place-content: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  width: 140px;
+  height: 40px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: 0.3s all;
+}
+
+.general-button--primary-color {
+  background-color: var(--violet);
+}
+
+.general-button--secondary-color {
+  background-color: var(--light-gray);
+  color: var(--violet);
+}
+
+.general-button--secondary-color:hover {
+  background-color: #939bf477;
+}
+
+.general-button--primary-color:hover {
+  background-color: #5964e0a5;
+}

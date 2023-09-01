@@ -1,3 +1,5 @@
+@import url('./styles/button.css');
+
 /* Colors */
 :root {
   /*Primary Colors*/
@@ -64,20 +66,6 @@ p {
 
 .global-spacing {
   margin: 20px 0;
-}
-
-.general-button {
-  display: grid;
-  place-content: center;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  width: 90px;
-  height: 40px;
-  border-radius: 3px;
-  font-weight: bold;
-  transition: 0.3s all;
-  text-decoration: none;
 }
 
 /* media */

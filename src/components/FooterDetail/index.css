@@ -1,0 +1,16 @@
+.footer-detail {
+  background-color: var(--white);
+  padding: 20px 0;
+}
+
+.footer-detail__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-detail__info p {
+  color: var(--grey);
+  font-size: 20px;
+  margin-top: 10px;
+}

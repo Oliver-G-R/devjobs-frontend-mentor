@@ -3,6 +3,7 @@ import { CardDetail } from "../../components/CardDetail/CardDetail";
 import { HeaderJob } from "../../components/HeaderJob/HeaderJob"
 import { useFetchJobById } from "../../hook/useFetchJobById";
 import { useRoute } from 'wouter'
+import { FooterDetail } from '../../components/FooterDetail/FooterDetail';
 
 export const Detail = () => {
   const [_, params] = useRoute("/detail/:id")
@@ -58,6 +59,7 @@ export const Detail = () => {
                 </div>
                 <a 
                   target='_blank' 
+                  className='general-button general-button--primary-color'
                   href={companyEmploymentDetail.apply}> Apply Now
                 </a>
               </div>
@@ -104,11 +106,12 @@ export const Detail = () => {
             </ol>
           </section>
         </div>
-                
-
-
       </main>
-
+      <FooterDetail 
+        position={companyEmploymentDetail.position} 
+        company={companyEmploymentDetail.company} 
+        applyUrl={companyEmploymentDetail.apply}
+      />
     </>
   )
 }

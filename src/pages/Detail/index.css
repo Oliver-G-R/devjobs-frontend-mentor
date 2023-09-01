@@ -64,3 +64,22 @@ h3 {
   color: var(--violet); /* Cambia el color del número */
   font-size: 24px; /* Tamaño de fuente para el número grande */
 }
+
+.detail-main-container__info-post-container {
+  display: flex;
+  gap: 20px;
+  color: var(--dark-grey);
+  width: 150px;
+  position: relative;
+}
+
+.detail-main-container__info-post-container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 56px;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: var(--dark-grey);
+}

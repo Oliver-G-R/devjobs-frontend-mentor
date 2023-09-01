@@ -25,21 +25,14 @@
   width: 90px;
 }
 
-.card-detail__site-button {
-  margin-left: auto;
-  color: var(--violet);
-  background-color: #eef0fc;
-  transition: 0.3s all;
-}
-
-.card-detail__site-button:hover {
-  background-color: #c5c9f46b;
-}
-
 .card-detail__company-info {
   line-height: 40px;
 }
 
 .card-detail__company-webpage {
   color: var(--grey);
+}
+
+.card-detail__site-button {
+  margin-left: auto;
 }

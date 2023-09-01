@@ -34,7 +34,7 @@ export const CardDetail = ({logo, bgColor, nameCompany, webCompany}:CardDetailPr
       </div>
 
       <a 
-        className='general-button card-detail__site' 
+        className='general-button general-button--secondary-color card-detail__site-button' 
         target='_blank' 
         href={webCompany}>
         Company Site
