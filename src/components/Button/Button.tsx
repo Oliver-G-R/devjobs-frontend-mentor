@@ -3,11 +3,12 @@ import './index.css'
 interface ButtonProps {
   bgColor: string
   colorText : string
-  text: string       
+  text: string      
+  className?: string 
   onClick?: () => void                               
 }
 
-export const Button = ({ bgColor, colorText, text, onClick  }:ButtonProps) => {
+export const Button = ({ bgColor, colorText, text, onClick, className  }:ButtonProps) => {
   return (
     <button 
       onClick={() => onClick && onClick()}
@@ -15,7 +16,8 @@ export const Button = ({ bgColor, colorText, text, onClick  }:ButtonProps) => {
         backgroundColor: bgColor,
         color: colorText
       }}
-      className='general-button'>
+      className={`general-button ${className}`}
+      >
       {text}
     </button> 
   )

@@ -61,6 +61,7 @@ export const SearchBar = () => {
         colorText='#fff'
         bgColor='var(--violet)'
         text='Search'
+        className='searchBar__button'
        />
       </div>
     </form>
