@@ -1,9 +1,9 @@
 import './index.css'
-import { CardDetail } from "../../components/CardDetail/CardDetail";
-import { HeaderJob } from "../../components/HeaderJob/HeaderJob"
+import { CardDetail } from "../../components/CardDetail";
+import { HeaderJob } from "../../components/HeaderJob"
 import { useFetchJobById } from "../../hook/useFetchJobById";
 import { useRoute } from 'wouter'
-import { FooterDetail } from '../../components/FooterDetail/FooterDetail';
+import { FooterDetail } from '../../components/FooterDetail';
 export const Detail = () => {
   const [_, params] = useRoute("/detail/:id")
   

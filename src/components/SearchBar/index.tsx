@@ -1,11 +1,11 @@
 import locationIcon from '../../assets/desktop/icon-location.svg'
 import './index.css'
-import { Button } from '../Button/Button'
+import { Button } from '../Button'
 import { ChangeEvent, FormEvent, useContext, useState } from 'react'
 import { FilterContext } from '../../context/FilterContext'
 import { ReactComponent as SearchIcon } from "../../assets/desktop/icon-search.svg";
 import { ReactComponent as FilterIcon } from "../../assets/mobile/icon-filter.svg";
-import { ModalFilter } from '../ModalFilter/ModalFilter'
+import { ModalFilter } from '../ModalFilter'
 
 export const SearchBar = () => {
   const [search, setSearch] = useState({

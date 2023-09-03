@@ -1,6 +1,6 @@
 import './index.css'
 import { FilterContext } from '../../context/FilterContext';
-import { Button } from '../Button/Button'
+import { Button } from '../Button'
 import { useState, useContext, ChangeEvent, FormEvent } from 'react';
 import {ReactComponent as LocationIcon } from '../../assets/desktop/icon-location.svg'
 

@@ -1,8 +1,8 @@
 import './index.css'
-import { CardCompany } from '../CardCompany/CardCompany'
+import { CardCompany } from '../CardCompany'
 import { useContext, useState } from 'react';
 import { FilterContext } from '../../context/FilterContext';
-import { Button } from '../Button/Button';
+import { Button } from '../Button';
 
 export const GridCardCompany = () => {
 
