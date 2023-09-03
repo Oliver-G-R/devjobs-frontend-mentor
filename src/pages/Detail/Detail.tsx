@@ -56,7 +56,7 @@ export const Detail = () => {
               </div>
             </header>
 
-            <p className='detail-main-container__descriptionb'>
+            <p className='detail-main-container__description'>
               {companyEmploymentDetail.description}
             </p>
           </section>

@@ -1,4 +1,5 @@
 import Logo from '../../assets/desktop/logo.svg'
+import { ToggleTheme } from '../ToggleTheme'
 import './index.css'
 import { Link } from 'wouter'
 interface HeaderJobProps {
@@ -13,8 +14,9 @@ export const HeaderJob = ({ children }:HeaderJobProps) => {
           <Link href='/'>
             <img  src={Logo} alt="" />
           </Link>
-          {/* search toggle */}
+          <ToggleTheme/>
         </div>
+        
        
         <div 
          style={{

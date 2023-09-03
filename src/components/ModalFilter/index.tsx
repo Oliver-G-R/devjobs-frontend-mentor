@@ -52,7 +52,7 @@ export const ModalFilter = ({ onClose, show}:ModalFilterProps) => {
               onChange={handleChange}
               value={search.location}
               type="text"  
-              className='searchBar__input'
+              className='searchBar__input' 
               placeholder='Filter by location...'/>
           </div>
           <div className='card-modal-filter__input-container'>

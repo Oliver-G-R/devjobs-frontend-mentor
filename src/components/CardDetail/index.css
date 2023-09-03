@@ -1,7 +1,7 @@
 .card-detail {
   display: flex;
   align-items: center;
-  background-color: var(--white);
+  background-color: var(--bg-secondary-color);
   width: 100%;
   position: absolute;
   top: -40px;

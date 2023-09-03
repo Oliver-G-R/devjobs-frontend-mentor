@@ -1,5 +1,5 @@
 .card-comapany {
-  background-color: var(--white);
+  background-color: var(--bg-secondary-color);
   border-radius: 6px;
   padding: 30px 40px;
   position: relative;
@@ -49,5 +49,5 @@
 }
 
 .card-comapany__position {
-  color: var(--very-dark-blue);
+  color: var(--title-color);
 }

@@ -4,7 +4,7 @@
   gap: 50px;
   margin-top: 120px;
   margin-bottom: 150px;
-  background-color: var(--white);
+  background-color: var(--bg-secondary-color);
   padding: 20px 30px;
 }
 
@@ -27,13 +27,13 @@
 }
 
 .detail-main-container__description {
-  color: var(--dark-grey);
+  color: var(--text-general-color);
 }
 
 .detail-main-container__section h1,
 h2,
 h3 {
-  color: var(--very-dark-blue);
+  color: var(--title-color);
 }
 
 .detail-main-container__list {

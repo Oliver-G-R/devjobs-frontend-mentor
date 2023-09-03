@@ -1,7 +1,7 @@
 .searchBar {
   display: flex;
   align-items: center;
-  background-color: var(--white);
+  background-color: var(--bg-secondary-color);
   border-radius: 5px;
   position: absolute;
   top: 65px;
@@ -31,12 +31,13 @@
   gap: 15px;
   width: 50%;
   padding: 20px 20px;
-  border-right: 2px solid var(--light-gray);
+  border-right: 2px solid var(--bg-primary-color);
 }
 
 .searchBar__conten-filter span {
   font-weight: bold;
   width: 100%;
+  color: var(--title-color);
 }
 
 .searchBar__input {
@@ -45,8 +46,13 @@
   font-size: 18px;
   outline: none;
   text-overflow: ellipsis;
+  background-color: var(--bg-secondary-color);
+  color: var(--text-general-color);
 }
 
+.searchBar__input::placeholder {
+  color: var(--text-general-color);
+}
 .searchBar__button {
   margin-left: auto;
 }
@@ -66,7 +72,7 @@
   transition: 0.3s all;
 
   cursor: pointer;
-  background-color: var(--light-gray);
+  background-color: var(--bg-checkBox-color);
 }
 .searchBar__checkbox-icon:hover {
   background-color: var(--light-violet);

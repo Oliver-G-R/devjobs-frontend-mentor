@@ -18,8 +18,8 @@
 }
 
 .general-button--secondary-color {
-  background-color: var(--light-gray);
-  color: var(--violet);
+  background-color: var(--bg-button-color);
+  color: var(--button-text-color);
 }
 
 .general-button--secondary-color:hover {

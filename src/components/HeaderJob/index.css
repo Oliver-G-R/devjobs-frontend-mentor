@@ -13,3 +13,9 @@
 .header-content {
   position: relative;
 }
+
+.header-container__content-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
