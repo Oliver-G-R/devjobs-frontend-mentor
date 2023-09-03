@@ -1,27 +1,34 @@
-# React + TypeScript + Vite
+# Proyecto resuleto de Frontend Mentor - Devjobs web app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Este proyecto esta hecho en [React con Vite](https://es.vitejs.dev/) usando Typescript y un paquete de rutas llamado [Wouter](https://www.npmjs.com/package/wouter).  
+La finalidad de este proyecto es resolver el reto de [Devjobs web app](https://www.frontendmentor.io/challenges/devjobs-web-app-HuvC_LP4l) y practicar mis habilidades en React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dentro de este proyecto podras encontrar el proyecto en figma junto con todos sus recursos para poder trabajar en el.
 
-## Expanding the ESLint configuration
+### Cosas implementadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Un buscador con multiples filtros asociados entre si
+- Soporte para dispositivos moviles
+- Dark Mode
+- Rutas con Wouter
+- Uso de Typescript con modelos para los datos
 
-- Configure the top-level `parserOptions` property like this:
+### Cosas a implementar a futuro
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- [ ] Agregar un skeleton loader para cuando se esten cargando los datos
+- [ ] Conectar con algub backend para poder obtener los datos o usar firebase
+- [ ] Mejorar la carga de los datos y cambiar el actual solo si se usa una api
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Ejectuar el proyecto
+
+Para ejectuar el proyecto solo debes de ejectuar el comando `npm run dev` y se abrira una ventana en tu navegador con el proyecto ejectuandose.
+
+### Vista de escritorio
+
+![Vista de escritorio](./design/desktop.png)
+
+### Vista de movil
+
+![Vista de movil](./design/mobile.png)
